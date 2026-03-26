@@ -1,5 +1,5 @@
 # tp-ecosistema
-Grupo 4
+
 graph TD
 
 A[Ecosistema Web Backend] --> B[Frameworks]
