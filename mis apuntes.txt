@@ -1,0 +1,30 @@
+| Característica        | Express (Node.js)                                         |
+| --------------------- | --------------------------------------------------------- |
+| **Desarrollador**     | TJ Holowaychuk                                            |
+| **Curva aprendizaje** | Baja (fácil de aprender, ideal principiantes)             |
+| **Rendimiento**       | Alto (usa Node.js y es asincrónico)                       |
+| **Ideal para...**     | APIs REST, apps web rápidas, microservicios               |
+| **Popularidad**       | Muy alta (uno de los frameworks más usados en JavaScript) |
+| **Lenguaje**          | JavaScript                                                |
+| **Tipo**              | Framework minimalista                                     |
+| **Ventaja**           | Flexible y rápido                                         |
+| **Desventaja**        | Poca estructura (tenés que organizar todo vos)            |
+
+
+4.Pasos "Hola Mundo" en Express
+npm init -y
+npm install express
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('Hola Mundo');
+});
+
+app.listen(3000, () => {
+  console.log('Servidor corriendo en http://localhost:3000');
+});
+
+Después corrés:
+
+node index.js
